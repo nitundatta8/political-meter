@@ -1,0 +1,23 @@
+.row {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.question {
+  border: solid 3px black;
+}
+
+.btn {
+  color: white;
+  background-color: blue;
+  border: solid 3px red;
+  padding: 20px;
+
+}
+
+.btn:hover {
+  color: black;
+  background-color: red;
+  border: solid 3px blue;
+}
