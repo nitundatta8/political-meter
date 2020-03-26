@@ -3,7 +3,7 @@ $(document).ready(function () {
   $("#startButton").click(function () {
     $("#quiz").show();
 
-    $("#buttonConfirm").click(function () {
+    $("#btnConfirm").click(function () {
 
 
       //
@@ -12,24 +12,25 @@ $(document).ready(function () {
       // if user checked yes, one === 1 and oneTwo === 0
       // if user checked no, one === 0 and oneTwo === -1
 
-      var twoOne = $("input:radio[name=twoOne]:checked").val();
-      var twoTwo = $("input:radio[name=twoTwo]:checked").val();
-      var threeOne = $("input:radio[name=threeOne]:checked").val();
-      var threeTwo = $("input:radio[name=threeTwo]:checked").val();
-      var fourOne = $("input:radio[name=fourOne]:checked").val();
-      var fourTwo = $("input:radio[name=fourTwo]:checked").val();
-      var fiveOne = $("input:radio[name=fiveOne]:checked").val();
-      var fiveTwo = $("input:radio[name=fiveTwo]:checked").val();
-      var sixOne = $("input:radio[name=sixOne]:checked").val();
-      var sixTwo = $("input:radio[name=sixTwo]:checked").val();
-      var sevenOne = $("input:radio[name=sevenOne]:checked").val();
-      var sevenTwo = $("input:radio[name=sevenTwo]:checked").val();
+      var twoOne = parseInt($("input:radio[name=twoOne]:checked").val());
+      var twoTwo = parseInt($("input:radio[name=twoTwo]:checked").val());
+      var threeOne = parseInt($("input:radio[name=threeOne]:checked").val());
+      var threeTwo = parseInt($("input:radio[name=threeTwo]:checked").val());
+      var fourOne = parseInt($("input:radio[name=fourOne]:checked").val());
+      var fourTwo = parseInt($("input:radio[name=fourTwo]:checked").val());
+      var fiveOne = parseInt($("input:radio[name=fiveOne]:checked").val());
+      var fiveTwo = parseInt($("input:radio[name=fiveTwo]:checked").val());
+      var sixOne = parseInt($("input:radio[name=sixOne]:checked").val());
+      var sixTwo = parseInt($("input:radio[name=sixTwo]:checked").val());
+      var sevenOne = parseInt($("input:radio[name=sevenOne]:checked").val());
+      var sevenTwo = parseInt($("input:radio[name=sevenTwo]:checked").val());
 
+      if
 
       var total = one + oneTwo + twoOne + twoTwo + threeOne + threeTwo + fourOne + fourTwo + fiveOne + fiveTwo + sixOne + sixTwo + sevenOne + sevenTwo;
 
       alert(total);
-
+      event.preventDefault();
     });
 
   });
