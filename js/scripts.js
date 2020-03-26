@@ -25,9 +25,13 @@ $(document).ready(function () {
       var sevenOne = $("input:radio[name=sevenOne]:checked").val();
       var sevenTwo = $("input:radio[name=sevenTwo]:checked").val();
 
-      var total = one + oneTwo + twoOne + twoTwo + threeOne;
+
+      var total = one + oneTwo + twoOne + twoTwo + threeOne + threeTwo + fourOne + fourTwo + fiveOne + fiveTwo + sixOne + sixTwo + sevenOne + sevenTwo;
+
+      alert(total);
+
     });
-    $
+
   });
 
 });
